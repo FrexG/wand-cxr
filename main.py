@@ -6,7 +6,7 @@ import pandas as pd
 from tqdm import tqdm
 
 from PIL import Image
-from cxr_wasabi import *
+from src.cxr_wasabi import *
 
 if __name__ == "__main__":
     argparser = argparse.ArgumentParser()
