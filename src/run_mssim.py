@@ -29,6 +29,7 @@ class ImageOnlyDataset(Dataset):
         image = torch.clamp(image, min=0.0, max=1.0)
         return image
 
+# https://github.com/VainF/pytorch-msssim/blob/master/pytorch_msssim/ssim.py 
 
 def _gaussian_window(window_size, sigma, channel, device, dtype):
     coords = torch.arange(window_size, device=device, dtype=dtype) - window_size // 2
