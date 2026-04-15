@@ -14,7 +14,8 @@ This repository provides an instantiation of WAND for chest radiography (WAND-CX
 
 ```bash
 python main.py \
-  --csv_path chexpert_sample.csv \
-  --num 10000 \
-  --output_dir outputs/# CXR-WASABI
+  --csv_r real_images.csv \
+  --csv_s synthetic_images.csv \
+  --num 500 \
+  --output_dir output
 ```
